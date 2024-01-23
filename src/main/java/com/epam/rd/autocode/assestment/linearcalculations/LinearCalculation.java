@@ -19,11 +19,13 @@ public class LinearCalculation {
      * @return the distance
      */
     public static double findCarsDistance(double car1Speed, double car2Speed, double initialDistance, double time) {
-        // TODO Place your code here
-        return 0;
+        double totalSpeed = car1Speed + car2Speed;
+        return initialDistance + (totalSpeed * time);
     }
 
     public static void main(String[] args) {
         System.out.println(findCarsDistance(90., 110., 65., 3.));
+        System.out.println(findCarsDistance(65.5, 90.4, 20.9, 1.5));
+        System.out.println(findCarsDistance(70., 85.6, 32.6, 2.));
     }
 }
